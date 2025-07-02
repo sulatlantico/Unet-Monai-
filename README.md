@@ -35,15 +35,14 @@ Amostras do conjunto de dados MNIST utilizado para simular segmentação binári
 O modelo UNet 2D foi definido com:
 
 - `spatial_dims=2`, `in_channels=1`, `out_channels=1`
-- **Camadas**: `(4, 8, 16)` filtros progressivamente em encoder/decoder
-- **Strides**: `(2, 2)` — dois down/up-samples de fator 2
+- **Camadas**: `(14, 28, 56)` filtros progressivamente em encoder/decoder
+- **Strides**: `(2, 2, 2)` — dois down/up-samples de fator 2
 - `num_res_units=0` (sem residuais), ativação `PReLU`, normalização `InstanceNorm`
-- Usando `BasicUNet` do MONAI
+- Usando `UNet` do MONAI
 
 A definição segue este bloco:
 
 ```python
 net = UNet(
   spatial_dims=2, in_channels=1, out_channels=1,
-  channels=(4, 8, 16), strides=(2, 2), num_res_units=0
-)
+  channels=(14, 28, 56), strides=(2, 2, 2), num_res_units=2, kernel_size=3, dropout=.2)
