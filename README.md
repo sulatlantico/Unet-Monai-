@@ -6,10 +6,10 @@
 
 ## 📚 Bibliotecas Utilizadas
 
-- [MONAI](https://monai.io/) – módulo `monai.networks.nets.UNet` para construir a UNet 2D :contentReference[oaicite:1]{index=1}  
+- [MONAI](https://monai.io/) – módulo `monai.networks.nets.UNet` para construir a UNet 2D 
 - [PYTORCH](https://pytorch.org) – backend de deep learning  
 - [PYTORCH LIGHTNING](https://lightning.ai/docs/pytorch/stable/) – estrutura para organizar treinamento com menos boilerplate  
-- [TORCHVISION MNIST](https://docs.pytorch.org/vision/stable/generated/torchvision.datasets.MNIST.html?highlight=mnist) – para carregar o dataset MNIST :contentReference[oaicite:2]{index=2}  
+- [TORCHVISION MNIST](https://docs.pytorch.org/vision/stable/generated/torchvision.datasets.MNIST.html?highlight=mnist) – para carregar o dataset MNIST
 - Python (numpy, os, datetime…)
 
 ---
