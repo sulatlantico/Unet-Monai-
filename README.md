@@ -25,7 +25,7 @@
 
 ## 🧪 Exemplos do Dataset
 
-![MNIST Examples](examples/mnist_examples.png)
+![MNIST Examples](mnist_examples.png)
 
 Amostras do conjunto de dados MNIST utilizado para simular segmentação binária.
 
